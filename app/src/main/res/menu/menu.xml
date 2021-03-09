@@ -1,24 +1,24 @@
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-<!--    <item-->
-<!--        android:id="@+id/ic_home"-->
-<!--        android:icon="@drawable/ic_baseline_home_24"-->
-<!--        android:title="Home"/>-->
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"/>
 
-<!--    <item-->
-<!--        android:id="@+id/ic_home"-->
-<!--        android:icon="@drawable/ic_baseline_home_24"-->
-<!--        android:title="My Bookings"/>-->
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="My Bookings"/>
 
-<!--    <item-->
-<!--        android:id="@+id/ic_destination"-->
-<!--        android:icon="@drawable/ic_baseline_dashboard_24"-->
-<!--        android:title="Destination"/>-->
+    <item
+        android:id="@+id/ic_destination"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:title="Destination"/>
 
-<!--    <item-->
-<!--        android:id="@+id/ic_info"-->
-<!--        android:icon="@drawable/ic_baseline_info_24"-->
-<!--        android:title="Info"/>-->
+    <item
+        android:id="@+id/ic_info"
+        android:icon="@drawable/ic_baseline_info_24"
+        android:title="Info"/>
 
-<!--</menu>-->
+</menu>
