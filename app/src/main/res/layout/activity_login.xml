@@ -1,212 +1,212 @@
-<!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<RelativeLayout-->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".LoginActivity">-->
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
 
-<!--    <LinearLayout-->
-<!--        android:id="@+id/linearLayout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="vertical">-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-<!--        <FrameLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="273dp"-->
-<!--            android:background="@drawable/blue_bg">-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="273dp"
+            android:background="@drawable/blue_bg">
 
-<!--            <ImageView-->
-<!--                android:layout_width="123dp"-->
-<!--                android:layout_height="100dp"-->
-<!--                android:layout_gravity="center_horizontal"-->
-<!--                android:layout_marginTop="80dp"-->
-<!--                android:src="@drawable/logo" />-->
+            <ImageView
+                android:layout_width="123dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/logo" />
 
-<!--        </FrameLayout>-->
+        </FrameLayout>
 
-<!--        <RelativeLayout-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="62dp"-->
-<!--            android:layout_marginTop="36dp"-->
-<!--            android:layout_marginRight="62dp"-->
-<!--            android:background="@drawable/blue_border_rounded_cornwe">-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
 
-<!--&lt;!&ndash;            Input&ndash;&gt;-->
-<!--            <EditText-->
-<!--                android:id="@+id/etUsername"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_toRightOf="@+id/ivUsernameIcon"-->
-<!--                android:background="@android:color/transparent"-->
-<!--                android:fontFamily="sans-serif"-->
-<!--                android:hint="Username"-->
-<!--                android:inputType="textPersonName"-->
-<!--                android:maxLines="1"-->
-<!--                android:paddingLeft="17dp"-->
-<!--                android:paddingTop="15dp"-->
-<!--                android:paddingBottom="15dp"-->
-<!--                android:textCursorDrawable="@drawable/cursor_color"-->
-<!--                android:textSize="15sp" />-->
+<!--            Input-->
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivUsernameIcon"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif"
+                android:hint="Username"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingLeft="17dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp" />
 
-<!--&lt;!&ndash;            Icon&ndash;&gt;-->
-<!--            <ImageView-->
-<!--                android:id="@+id/ivUsernameIcon"-->
-<!--                android:layout_width="14.7dp"-->
-<!--                android:layout_height="10.3dp"-->
-<!--                android:layout_centerVertical="true"-->
-<!--                android:layout_marginLeft="17dp"-->
-<!--                android:src="@drawable/userr"/>-->
-
-
-<!--        </RelativeLayout>-->
-
-<!--        <RelativeLayout-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginLeft="62dp"-->
-<!--            android:layout_marginTop="12.7dp"-->
-<!--            android:layout_marginRight="62dp"-->
-<!--            android:background="@drawable/blue_border_rounded_cornwe">-->
-
-<!--            &lt;!&ndash; INPUT &ndash;&gt;-->
-<!--            <EditText-->
-<!--                android:id="@+id/etpassword"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_toRightOf="@+id/ivicon"-->
-<!--                android:background="@android:color/transparent"-->
-<!--                android:fontFamily="sans-serif"-->
-<!--                android:hint="Password"-->
-<!--                android:maxLength="20"-->
-<!--                android:maxLines="1"-->
-<!--                android:paddingLeft="17dp"-->
-<!--                android:paddingTop="15dp"-->
-<!--                android:paddingBottom="15dp"-->
-<!--                android:textCursorDrawable="@drawable/cursor_color"-->
-<!--                android:textSize="15sp" />-->
-
-<!--            &lt;!&ndash; ICON &ndash;&gt;-->
-<!--            <ImageView-->
-<!--                android:id="@+id/ivicon"-->
-<!--                android:layout_width="14.7dp"-->
-<!--                android:layout_height="10.3dp"-->
-<!--                android:layout_centerVertical="true"-->
-<!--                android:layout_marginLeft="17dp"-->
-<!--                android:src="@drawable/password" />-->
-
-<!--        </RelativeLayout>-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/tvSignIn"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginLeft="62dp"-->
-<!--            android:layout_marginTop="18.7dp"-->
-<!--            android:layout_marginRight="62dp"-->
-<!--            android:fontFamily="sans-serif"-->
-<!--            android:gravity="center"-->
-<!--            android:paddingTop="14dp"-->
-<!--            android:paddingBottom="14dp"-->
-<!--            android:text="Log In"-->
-<!--            android:textColor="#ffffff"-->
-<!--            android:textSize="17sp"-->
-<!--            android:background="@android:color/holo_red_light"/>-->
+<!--            Icon-->
+            <ImageView
+                android:id="@+id/ivUsernameIcon"
+                android:layout_width="14.7dp"
+                android:layout_height="10.3dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/userr"/>
 
 
-<!--<LinearLayout-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:orientation="horizontal"-->
-<!--    android:padding="15dp"-->
-<!--    android:gravity="center">-->
+        </RelativeLayout>
 
-<!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="20dp"-->
-<!--        android:layout_marginTop="15dp"-->
-<!--        android:fontFamily="sans-serif"-->
-<!--        android:text="Don't have an Account ?"-->
-<!--        android:textColor="#1566e0"-->
-<!--        android:textSize="10.5sp" />-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="12.7dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
 
-<!--    <TextView-->
-<!--        android:id="@+id/tvSignUp"-->
-<!--        android:text="Register"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="25dp"-->
-<!--        android:layout_marginTop="15dp"-->
-<!--        android:textColor="#6115E6"-->
-<!--        android:layout_marginHorizontal="10dp" />-->
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/etpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ivicon"
+                android:background="@android:color/transparent"
+                android:fontFamily="sans-serif"
+                android:hint="Password"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingLeft="17dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp" />
 
-<!--</LinearLayout>-->
+            <!-- ICON -->
+            <ImageView
+                android:id="@+id/ivicon"
+                android:layout_width="14.7dp"
+                android:layout_height="10.3dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/password" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="18.7dp"
+            android:layout_marginRight="62dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="Log In"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:background="@android:color/holo_red_light"/>
 
 
-<!--    </LinearLayout>-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Don't have an Account ?"
+        android:textColor="#1566e0"
+        android:textSize="10.5sp" />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#6115E6"
+        android:layout_marginHorizontal="10dp" />
+
+</LinearLayout>
 
 
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:orientation="vertical">-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginBottom="13.7dp"-->
-<!--            android:gravity="center"-->
-<!--            android:orientation="horizontal">-->
+    </LinearLayout>
 
 
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:fontFamily="sans-serif"-->
-<!--                android:gravity="center_horizontal"-->
-<!--                android:text="or"-->
-<!--                android:textColor="#aeaeae"-->
-<!--                android:textSize="15sp" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13.7dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
 
-<!--        </LinearLayout>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center_horizontal"
+                android:text="or"
+                android:textColor="#aeaeae"
+                android:textSize="15sp" />
 
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginBottom="35dp"-->
-<!--            android:gravity="center"-->
-<!--            android:orientation="horizontal">-->
 
-<!--            <ImageView-->
-<!--                android:layout_width="26.7dp"-->
-<!--                android:layout_height="26.7dp"-->
-<!--                android:src="@drawable/fb" />-->
+        </LinearLayout>
 
-<!--            <ImageView-->
-<!--                android:layout_width="26.7dp"-->
-<!--                android:layout_height="26.7dp"-->
-<!--                android:layout_marginLeft="20dp"-->
-<!--                android:layout_marginRight="20dp"-->
-<!--                android:src="@drawable/instagram" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-<!--            <ImageView-->
-<!--                android:layout_width="26.7dp"-->
-<!--                android:layout_height="26.7dp"-->
-<!--                android:layout_marginRight="20dp"-->
-<!--                android:src="@drawable/twitter" />-->
+            <ImageView
+                android:layout_width="26.7dp"
+                android:layout_height="26.7dp"
+                android:src="@drawable/fb" />
 
-<!--            <ImageView-->
-<!--                android:layout_width="26.7dp"-->
-<!--                android:layout_height="26.7dp"-->
-<!--                android:src="@drawable/linkedin" />-->
+            <ImageView
+                android:layout_width="26.7dp"
+                android:layout_height="26.7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/instagram" />
 
-<!--        </LinearLayout>-->
+            <ImageView
+                android:layout_width="26.7dp"
+                android:layout_height="26.7dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/twitter" />
 
-<!--    </LinearLayout>-->
+            <ImageView
+                android:layout_width="26.7dp"
+                android:layout_height="26.7dp"
+                android:src="@drawable/linkedin" />
 
-<!--</RelativeLayout>-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
