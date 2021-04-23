@@ -1,0 +1,3 @@
+include ':bookhotelwear'
+include ':app'
+rootProject.name = "BookHotel"

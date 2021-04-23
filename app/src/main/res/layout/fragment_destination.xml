@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Fragment.DestinationFragment" >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hotels"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:gravity="center_horizontal" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RvRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Destination"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="30sp"-->
+<!--        android:gravity="center_horizontal" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/dimage"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="253dp"-->
+<!--        android:src="@drawable/pokhara" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Pokhara"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvdetails"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Pokhara is a city on Phewa Lake, in central Nepal. It’s known as a gateway to the Annapurna Circuit, a popular trail in the Himalayas. Tal Barahi Temple, a 2-story pagoda, sits on an island in the lake. On the eastern shore, the Lakeside district has yoga centers and restaurants. "-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textSize="15sp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvPrice"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Rs, 10000 per person"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/btnBook"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Book"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:background="@android:color/holo_green_dark"/>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivdimage"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="253dp"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:src="@drawable/mustang" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/Name"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Mustang"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvdetails1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Mustang District is one of the eleven districts of Gandaki Province and one of seventy-seven districts of Nepal. It covers an area of 3,573 km² and has a population of 13,452. The headquarters is located at Jomsom."-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textSize="15sp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/Price"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Rs, 12000 per person"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/Book"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Book"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="20sp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:background="@android:color/holo_green_dark"/>-->
+
+
+<!--</LinearLayout>-->
+</FrameLayout>
