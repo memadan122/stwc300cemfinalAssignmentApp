@@ -32,4 +32,11 @@ object ServiceBuilder {
         return retrofit.create(serviceType)
     }
 
+
+    fun loadImg():String
+    {
+        var arr = BASE_URL.split("/")
+        return arr[0]+"/"+arr[2]+"/"
+    }
+
 }

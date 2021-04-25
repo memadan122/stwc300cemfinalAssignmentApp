@@ -19,7 +19,7 @@ class SignUpTestUI {
     @Test
     fun signUpTestUI() {
         Espresso.onView(ViewMatchers.withId(R.id.etFirstname))
-            .perform(ViewActions.typeText("madan"))
+            .perform(ViewActions.typeText("sam"))
         Espresso.closeSoftKeyboard()
 
         Espresso.onView(ViewMatchers.withId(R.id.etLastname))
@@ -40,15 +40,15 @@ class SignUpTestUI {
 
 
         Espresso.onView(ViewMatchers.withId(R.id.etUsername))
-            .perform(ViewActions.typeText("madan"))
+            .perform(ViewActions.typeText("mdn"))
         Espresso.closeSoftKeyboard()
 
         Espresso.onView(ViewMatchers.withId(R.id.etPassword))
-            .perform(ViewActions.typeText("madan123"))
+            .perform(ViewActions.typeText("mdn123"))
         Espresso.closeSoftKeyboard()
 
         Espresso.onView(ViewMatchers.withId(R.id.etConfirmPassword))
-            .perform(ViewActions.typeText("madan123"))
+            .perform(ViewActions.typeText("mdn123"))
         Espresso.closeSoftKeyboard()
 
         Espresso.onView(ViewMatchers.withId(R.id.tvSignUp))

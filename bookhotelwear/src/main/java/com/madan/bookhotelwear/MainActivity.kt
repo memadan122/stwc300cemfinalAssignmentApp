@@ -32,6 +32,7 @@ class MainActivity : WearableActivity() {
                     //put all the destination details in lstdestination
 
                     val lstDestination = response.data
+                    println(lstDestination!!.size)
                     if (lstDestination != null) {
                         withContext(Dispatchers.Main) {
 
@@ -42,6 +43,7 @@ class MainActivity : WearableActivity() {
                 }
             }
             catch (ex : Exception){
+                println(ex.printStackTrace())
                 withContext(Dispatchers.Main){
                     Toast.makeText(this@MainActivity, "Error : ${ex.toString()}", Toast.LENGTH_SHORT).show()
                 }

@@ -49,11 +49,14 @@ class DestinationAdpater (
 
     override fun onBindViewHolder(holder: DestinationViewHolder, position: Int) {
         val destination = lstDestinations[position]
-         Glide.with(context).load("${ServiceBuilder.BASE_URL}${destination.dimage}").into(holder.dimage)
-        println("${ServiceBuilder.BASE_URL}${destination.dimage}")
+
         holder.dname.text = destination.dname
         holder.ddetails.text = destination.ddetails
         holder.dprice.text = destination.dprice
+
+
+        var imgPath = ServiceBuilder.loadImg()+destination.dimage!!.replace("\\","/")
+        Glide.with(context).load(imgPath).into(holder.dimage)
 
         holder.btnBook.setOnClickListener {
             CoroutineScope(Dispatchers.IO).launch {

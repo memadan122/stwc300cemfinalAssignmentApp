@@ -12,7 +12,7 @@ class UnitTesting {
 
     @Test
     fun registerUser() = runBlocking {
-        val user = User(firstname = "Avi", lastname = "kc", address = "bkt", email = "abc@gmail.com", phone = "986353517", username = "Avi", password = "12345" )
+        val user = User(firstname = "Madan", lastname = "Madan", address = "Ktm", email = "madan5@gmail.com", phone = "98765432", username = "madan2", password = "madan123" )
         val userRepository = UserRepository()
         val response = userRepository.registerUser(user)
         val expectedResult = true
@@ -23,7 +23,7 @@ class UnitTesting {
     @Test
     fun checkUser() = runBlocking {
         val userRepository = UserRepository()
-        val response = userRepository.checkUser("Aakash", "1111")
+        val response = userRepository.checkUser("madan1", "madan123")
         ServiceBuilder.token = response.token
         val expectedResult = true
         val actualResult = response.success
@@ -33,7 +33,7 @@ class UnitTesting {
     @Test
     fun registerUserfailed() = runBlocking {
         val user =
-                User(firstname = "", lastname = "khatri", address = "Duwakot", email = "aakash@gmail.com", username = "Aakash", password = "khatri")
+                User(firstname = "", lastname = "Bastakoti", address = "gorkha", email = "madan@gmail.com", username = "madan", password = "madan")
         val userRepository = UserRepository()
         val response = userRepository.registerUser(user)
         val expectedResult = true
@@ -44,7 +44,7 @@ class UnitTesting {
     @Test
     fun checkUserFailed() = runBlocking {
         val userRepository = UserRepository()
-        val response = userRepository.checkUser("Aakashhh", "khatri")
+        val response = userRepository.checkUser("madan", "madan13")
         ServiceBuilder.token = response.token
         val expectedResult = true
         val actualResult = response.success
@@ -53,7 +53,7 @@ class UnitTesting {
 
     @Test
     fun GetBookings() = runBlocking {
-        ServiceBuilder.token="Bearer "+UserRepository().checkUser("Aakash","1111").token
+        ServiceBuilder.token="Bearer "+UserRepository().checkUser("madan","madan123").token
         val booking = BookingRepository()
         val response = booking.getBooking()
         val expectedResult = true
@@ -63,7 +63,7 @@ class UnitTesting {
 
     @Test
     fun GetBookingsfailed() = runBlocking {
-        ServiceBuilder.token="Bearer "+UserRepository().checkUser("Aakashhhhh","11111111").token
+        ServiceBuilder.token="Bearer "+UserRepository().checkUser("madan","madan111").token
         val booking = BookingRepository()
         val response = booking.getBooking()
         val expectedResult = true
@@ -73,9 +73,9 @@ class UnitTesting {
 
     @Test
     fun DeleteBookings() = runBlocking {
-        ServiceBuilder.token="Bearer "+UserRepository().checkUser("Aakash","1111").token
+        ServiceBuilder.token="Bearer "+UserRepository().checkUser("madan","madan123").token
         val repository = BookingRepository()
-        val response = repository.deleteBooking(id = "607b0e4ceedadb07ec2a8f29")
+        val response = repository.deleteBooking(id = "60827374956512024c98ffdd")
         val expectedResult = true
         val actualResult = response.success
         Assert.assertEquals(expectedResult, actualResult)
@@ -83,7 +83,7 @@ class UnitTesting {
 
     @Test
     fun DeleteBookingsFailed() = runBlocking {
-        ServiceBuilder.token="Bearer "+UserRepository().checkUser("Aakash","1111").token
+        ServiceBuilder.token="Bearer "+UserRepository().checkUser("madan","11madan12311").token
         val repository = BookingRepository()
         val response = repository.deleteBooking(id = "607b0e4ceedadb07ec2a")
         val expectedResult = true

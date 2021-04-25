@@ -66,7 +66,8 @@ class BookingAdapter (
             holder.tvName.text = "No Relevent data"
         }
 
-
+        var imgPath = ServiceBuilder.loadImg()+booking.Destination!!.dimage!!.replace("\\","/")
+        Glide.with(context).load(imgPath).into(holder.cvImage)
         holder.tvDelete.setOnClickListener {
             val builder = AlertDialog.Builder(context)
             //set title for alert dialog
